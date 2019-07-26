@@ -21,8 +21,6 @@ int main () {
   int failedCheckCount2 = 0;
   int failedCheckCount3 = 0;
   int failedCheckCount4 = 0;
-  int failedCheckCount5 = 0;
-  int failedCheckCount6 = 0;
   int numberOfTests = 100; //number of random tests to generate
 
   int n, j, numPlayers, choice2, handPos, currentPlayer;
@@ -108,7 +106,7 @@ int main () {
 #if (NOISY_TEST == 1)
           printf("Hand Count - expected: 4, actual: %d\n", testState.handCount[currentPlayer]);
 #endif
-          failedCheckCount2++;
+          failedCheckCount3++;
         } 
       }
 
@@ -121,7 +119,7 @@ int main () {
 #if (NOISY_TEST == 1)
               printf("Hand Count of player %d - expected: 4, actual: %d\n", p, testState.handCount[p]);
 #endif
-              failedCheckCount3++;
+              failedCheckCount4++;
             }
           }
         }
@@ -134,7 +132,6 @@ int main () {
     printf("Failed Check 2: %d times\n", failedCheckCount2);
     printf("Failed Check 3: %d times\n", failedCheckCount3);
     printf("Failed Check 4: %d times\n", failedCheckCount4);
-    printf("Failed Check 5: %d times\n", failedCheckCount5);
-    printf("Failed Check 6: %d times\n", failedCheckCount6);
+
     return 0;
   }

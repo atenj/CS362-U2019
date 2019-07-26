@@ -44,9 +44,7 @@ int main () {
     struct gameState state, testState;
 
     printf ("Testing cardTribute\n");
-
     printf ("RANDOM TESTS.\n");
-
 
     for (n = 0; n < numberOfTests; n++) {
 
@@ -54,6 +52,8 @@ int main () {
       addCoins = 0; //reset the counters for coins 
       addActions = 0; //actions
       addCards = 0;   //and cards
+      tributeRevealedCards[0] = -1;
+      tributeRevealedCards[1] = -1;
       initializeGame(numPlayers, k, seed, &state); //initialize a game
 
       //deckCount, discardCount are set to random numbers within domain
