@@ -6,13 +6,21 @@
 char inputChar()
 {
     // TODO: rewrite this function
-    return ' ';
+    int randInt = (rand() % 95) + 32;
+    char randChar = (char) randInt;
+    return randChar;
 }
 
 char *inputString()
 {
     // TODO: rewrite this function
-    return "";
+    char randString[6];
+    for (int i = 0; i < 5; i++) {
+    	randString[i] = (rand() % 16) + 101;
+    }
+    randString[5]='\0';
+    char *inString = randString;
+    return inString;
 }
 
 void testme()
