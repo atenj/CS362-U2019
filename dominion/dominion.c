@@ -1270,7 +1270,7 @@ int cardBaron(int choice1, struct gameState *state, int currentPlayer)
     if (choice1 > 0)    //Boolean true or going to discard an estate
     {
         int p = 0;      //Iterator for hand!
-        int card_not_discarded = 0;   //Flag for discard set!
+        int card_not_discarded = 1;   //Flag for discard set!
         while(card_not_discarded)
         {
             if (state->hand[currentPlayer][p] == estate)  //Found an estate card!
