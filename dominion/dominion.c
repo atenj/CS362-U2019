@@ -1449,7 +1449,7 @@ int cardTribute(struct gameState *state, int nextPlayer, int currentPlayer, int 
 
     else
     {
-        if (state->deckCount[nextPlayer] = 0)
+        if (state->deckCount[nextPlayer] == 0)
         {
             for (i = 0; i < state->discardCount[nextPlayer]; i++)
             {
